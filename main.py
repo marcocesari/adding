@@ -1,1 +1,5 @@
-print('Ciao')
+name=input('What''s your name? ')
+print('Hello', name)
+a=int(input('please enter the first number: '))
+b=int(input('please enter the second number: '))
+print(a, '+', b, '=', a+b)
