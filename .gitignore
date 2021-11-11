@@ -1,3 +1,4 @@
 git_config
 git_credentials
 .DS_Store
+.ipynb_checkpoints
