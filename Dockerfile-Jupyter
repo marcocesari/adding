@@ -21,10 +21,3 @@ RUN conda install -c conda-forge --quiet --yes \
     npm cache clean --force && \
     rm -rf "/home/jovyan/.cache/yarn" && \
     rm -rf "/home/jovyan/.node-gyp"
-
-COPY ./git_config /home/jovyan/.gitconfig
-COPY ./git_credentials /home/jovyan/.git-credentials
-
-WORKDIR /home/jovyan
-RUN git config --global credential.helper store
-RUN git clone https://github.com/marcocesari/playground.git
