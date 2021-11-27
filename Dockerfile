@@ -2,7 +2,6 @@ FROM jupyter/scipy-notebook
 
 USER root
 
-# ffmpeg for matplotlib anim & dvipng for latex labels
 RUN apt-get update && \
     apt-get install -y --no-install-recommends htop jq && \
     rm -rf /var/lib/apt/lists/*
